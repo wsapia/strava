@@ -1,0 +1,43 @@
+body {
+    background:#121212;
+    color:#eee;
+    font-family:Consolas;
+    margin:0;
+}
+
+.sidebar {
+    width:200px;
+    position:fixed;
+    height:100vh;
+    background:#1e1e1e;
+    padding:15px;
+}
+
+.sidebar button {
+    width:100%;
+    margin:5px 0;
+    padding:10px;
+    background:#333;
+    border:none;
+    color:white;
+    cursor:pointer;
+}
+
+.main {
+    margin-left:220px;
+    padding:20px;
+}
+
+table {
+    width:100%;
+    border-collapse:collapse;
+}
+
+td,th {
+    border:1px solid #333;
+    padding:8px;
+}
+
+.page {
+    display:none;
+}

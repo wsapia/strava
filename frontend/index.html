@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MTB Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+	<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>MTB</h2>
+    <button onclick="showPage('activities')">Activities</button>
+    <button onclick="showPage('bikes')">Bikes</button>
+    <button onclick="toggleUnits()">Units</button>
+</div>
+
+<div class="main">
+
+<div id="activities" class="page">
+    <h2>Activities</h2>
+    <input placeholder="Search..." oninput="filterActivities(this.value)">
+    <table id="activityTable"></table>
+    <div id="pagination"></div>
+</div>
+
+<div id="bikes" class="page">
+    <h2>Bikes</h2>
+    <div id="bikeTable"></div>
+</div>
+
+<div id="chart"></div>
+<div id="map"></div>
+
+</div>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>
